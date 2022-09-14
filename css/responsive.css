@@ -1,0 +1,178 @@
+/* Medium Layout: 1280px. */
+
+@media only screen and (min-width: 992px) and (max-width: 1280px) {
+
+
+
+	.careplus-jumbotron-area,
+	.jumbotron-iphone {
+	  height: 550px;
+	}
+
+	.jumbotron-content {
+	  margin-top: 200px;
+	}
+
+	.careplus-gettheapp-area {
+	  padding: 60px 0 80px;
+	}
+
+	.getapp-content a {
+	  margin-right: 18%;
+	  margin-top: 15px;
+	}
+
+
+
+
+
+}
+
+
+
+/* Tablet Layout: 768px. */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+
+
+	.careplus-jumbotron-area,
+	.jumbotron-iphone {
+	  height: 550px;
+	}
+
+	.jumbotron-content {
+	  margin-top: 165px;
+	}
+
+	.careplus-gettheapp-area {
+	  padding: 60px 0 80px;
+	}
+
+	.section-heading {
+	  padding-bottom: 60px;
+	}
+
+	.single-package-heading h1 {
+	  font-size: 60px;
+	}
+
+	.single-package-details {
+	  padding: 0 15px;
+	}
+
+
+
+}
+
+
+
+/* Mobile Layout: 320px. */
+
+@media only screen and (max-width: 767px) {
+
+
+
+	.careplus-jumbotron-area {
+	  height: 450px;
+	}
+
+	.jumbotron-content {
+	  margin-top: 110px;
+	  text-align: center;
+	}
+
+	.jumbotron-content h1 {
+	  font-size: 50px;
+	}
+
+	.jumbotron-content h3 {
+	  font-size: 22px;
+	  line-height: 34px;
+	}
+
+	.jumbotron-iphone {
+	  display: none;
+	}
+
+	.section-heading {
+	  padding-bottom: 60px;
+	}
+
+	.single-testimonial {
+	  overflow: hidden;
+	  padding-bottom: 30px;
+	}
+
+	.careplus-testimonial-area {
+	  padding: 60px 0 30px;
+	}
+
+	.careplus-gettheapp-area {
+	  padding: 60px 0 90px;
+	}
+
+	.getapp-img {
+	  display: none;
+	}
+
+	.getapp-content {
+	  margin-top: 0;
+	  text-align: center;
+	}
+
+	.getapp-content h2 {
+	  margin-top: 0;
+	}
+
+	.getapp-content a {	  display: inline-block;
+	  float: none;
+	  margin-right: 0;
+	}
+
+	.careplus-countdown-area {
+	  padding: 60px 0 40px;
+	}
+
+	.single-counter {
+	  padding-bottom: 30px;
+	}
+
+	.careplus-pricing-area {
+	  padding: 90px 0 30px;
+	}
+
+	.single-package-wraper {
+	  margin-bottom: 30px;
+	}
+
+	.single-package-details {
+	  padding: 0 15px;
+	}
+
+	.careplus-footertop-area {
+	  padding: 60px 0 30px;
+	}
+
+	.contact-wraper {
+	  padding-bottom: 45px;
+	}
+
+
+
+}
+
+
+
+/* Wide Mobile Layout: 480px. */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+
+
+	.jumbotron-content {
+	  margin-top: 135px;
+	}
+
+
+}

@@ -1,0 +1,824 @@
+/*
+Template Name: tamplatename
+Template URI: http://tamplateurl.com
+Author: Nurul Amin
+Author m@il: nurulamin.kh9@gmail.com
+Version: 1.0.0
+Description: This theme is test theme.
+*/
+
+
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+body {
+	font-family: 'Roboto', sans-serif;
+	color: #666666;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+	font-style: normal;
+	background: none repeat scroll 0 0 #FFFFFF;
+}
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;;
+}
+
+ul li {
+	display: inline;
+}
+
+a {
+	-moz-transition: 0.3s;
+	-o-transition: 0.3s;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+	color: #333;
+}
+a:focus { outline: 0 solid }
+a:focus, a:hover {color: #fff}
+a:hover { text-decoration: none }
+
+.fix { overflow: hidden;}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+   
+/* ================================
+   careplus header area
+   ================================ */
+
+.careplus-header-area {
+  background: #525252 none repeat scroll 0 0;
+  padding: 25px 0;
+}
+
+
+
+/* ================================
+   careplus jumbotron area
+   ================================ */
+
+.careplus-jumbotron-area {
+  background-position: center center;
+  background-size: cover;
+  height: 590px;
+}
+
+.jumbotron-content {
+  margin-top: 240px;
+}
+
+.jumbotron-content h1 {
+  color: #7b802c;
+  font-size: 60px;
+  letter-spacing: 2px;
+}
+
+.jumbotron-content h3 {
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 45px;
+}
+
+.jumbotron-iphone {
+  height: 590px;
+  position: relative;
+}
+
+.jumbotron-iphone img {
+  bottom: -4px;
+  left: 0;
+  position: absolute;
+}
+
+
+
+/* ================================
+   
+   ================================ */
+
+.careplus-features-area {
+  padding: 60px 0;
+}
+
+.section-heading {
+  padding-bottom: 100px;
+}
+
+.section-heading h2 {
+  font-size: 36px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.section-heading h3 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 0;
+  margin-top: 15px;
+}
+
+.featimg-wraper {
+  height: 65px;
+  text-align: center;
+  vertical-align: top;
+  width: 100%;
+}
+
+.featimg-wraper img {
+  display: none;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.featimg-wraper img.fetimage {
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.single-features h4 {
+  color: #020202;
+  margin-top: 30px;
+}
+
+
+
+
+/* ================================
+   careplus testimonial area
+   ================================ */
+
+.careplus-testimonial-area {
+  background-position: center center;
+  background-size: cover;
+  padding: 60px 0;
+}
+
+.testimonial-heading h2 {
+  font-weight: 400;
+  margin: 0 0 60px;
+}
+
+.bayer-img {
+  width: 24.5%;
+}
+
+.bayer-img img {
+  border: 3px solid #7b802c;
+  height: auto;
+  width: 100%;
+}
+
+.bayer-content {
+  padding: 0 30px 0 20px;
+  width: 75.5%;
+}
+
+.bayer-content p {
+  font-size: 16px;
+  min-height: 90px;
+}
+
+.bayer-content h4 {
+  color: #7b802c;
+  font-size: 14px;
+  margin: 0;
+  text-align: right;
+}
+
+
+
+
+/* ================================
+   careplus gettheapp area
+   ================================ */
+
+.careplus-gettheapp-area {
+  background-position: 0 59%;
+  background-repeat: no-repeat;
+  padding: 80px 0 130px;
+}
+
+.getapp-content {
+  margin-top: 105px;
+}
+
+.getapp-content h2 {
+  margin-bottom: 20px;
+}
+
+.getapp-content p {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.getapp-content a {
+  background: #7b802c none repeat scroll 0 0;
+  border-radius: 4px;
+  border: 1px solid #7b802c;
+  color: #fff;
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 25%;
+  margin-top: 20px;
+  padding: 8px 25px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.getapp-content a:hover {
+  color: #7b802c;
+  background: #ffffff none repeat scroll 0 0;
+}
+
+
+
+
+/* ================================
+   careplus countdown area
+   ================================ */
+
+.careplus-countdown-area {
+  background-position: center center;
+  background-size: cover;
+  padding: 70px 0;
+}
+
+.single-counter h1 {
+  color: #7b802c;
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.single-counter.text-center h4 {
+  color: #7b802c;
+  font-size: 18px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+
+
+
+/* ================================
+   
+   ================================ */
+
+.careplus-pricing-area {
+  padding: 90px 0 60px;
+}
+
+.single-package-wraper {
+  border: 1px solid #000;
+}
+
+.single-package-heading {
+  padding: 0 0 60px;
+}
+
+.single-package-heading h1 {
+  color: #7b802c;
+  font-size: 80px;
+}
+
+.single-package-heading h1 span {
+  font-size: 25px;
+  vertical-align: top;
+}
+
+.single-package-heading h3 {
+  color: #000000;
+  font-size: 20px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.single-package-heading span {
+  color: #7b802c;
+  text-transform: uppercase;
+}
+
+.single-package-details {
+  padding: 0 40px;
+}
+
+.single-package-details ul li p {
+  text-transform: capitalize;
+}
+
+.single-package-details ul li p span {
+  float: right;
+}
+
+.single-package-button {
+  padding: 50px 0 40px;
+}
+
+.single-package-button a {
+  background: #7b802c none repeat scroll 0 0;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 9px 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid #7b802c;
+}
+
+.single-package-button a:hover {
+  background: #fff none repeat scroll 0 0;
+  color: #7b802c;
+}
+
+
+
+
+/* ================================
+   
+   ================================ */
+
+.careplus-footertop-area {
+  background: #f5f4f5 none repeat scroll 0 0;
+  padding: 60px 0;
+}
+
+.single-contact {
+  overflow: hidden;
+}
+
+.single-contact span {
+  display: inline-block;
+  float: left;
+  height: 60px;
+  width: 15%;
+}
+
+.single-contact span i {
+  color: #7b802c;
+  font-size: 25px;
+  padding-top: 14px;
+}
+
+.contact-content {
+  float: right;
+  width: 85%;
+}
+
+.contact-content p {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.contact-content a {
+  font-size: 16px;
+  color: #666666;
+  text-decoration: none;
+}
+
+.contact-content a span {
+  color: #7b802c;
+  float: none;
+  height: auto;
+  width: auto;
+}
+
+.subscribe-form h3 {
+  font-size: 16px;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+.subscribe-form form input[type="text"] {
+  background: transparent none repeat scroll 0 0;
+  border: 1px solid #7b802c;
+  margin-right: -5px;
+  padding-left: 5px;
+  width: 65%;
+  height:28px;
+}
+
+.subscribe-form form button {
+  background: #7b802c none repeat scroll 0 0;
+  border: medium none;
+  color: #fff;
+  font-weight: 500;
+  padding-bottom: 2px;
+  padding-top: 2px;
+  text-transform: uppercase;
+  width: 21%;
+}
+
+.subscribe-form p {
+  border-bottom: 1px solid #c8c8c8;
+  line-height: 20px;
+  margin-bottom: 0;
+  margin-top: 7px;
+  padding-bottom: 20px;
+}
+
+.single-contact h4 {
+  font-size: 14px;
+  margin-bottom: 12px;
+  margin-top: 25px;
+  text-transform: uppercase;
+}
+
+.footer-social ul li {
+  display: inline-block;
+  padding-right: 18px;
+}
+
+.footer-social ul li a {
+  display: block;
+}
+
+.footer-social ul li a i {
+  color: #7b802c;
+  font-size: 25px;
+}
+
+
+
+
+/* ================================
+   
+   ================================ */
+
+.careplus-footer-area {
+  background: #272727 none repeat scroll 0 0;
+  min-height: 60px;
+}
+
+.copyright p {
+  color: #fff;
+  padding-top: 20px;
+}
+
+
+
+
+
+/* ================================
+   
+   ================================ */
+
+
+
+/* ================================
+   
+   ================================ */
+
+
+
+/* ================================
+   
+   ================================ */
+
+
+
+/* ================================
+   
+   ================================ */
+
+
+
+/* ================================
+   
+   ================================ */
+
+
+
+
+/* ================================
+   
+   ================================ */
+
+
+
+/* ================================
+   
+   ================================ */
+
+
+
+
+/* ================================
+   
+   ================================ */
+
+
+
+/* ================================
+   
+   ================================ */
+
+
+
+
+/* ================================
+   
+   ================================ */
+
+
+
+/* ================================
+   
+   ================================ */
+
+
+
+
+/* ================================
+   
+   ================================ */
+
+
+
+
+/* ================================
+   
+   ================================ */
+
+
+
+/* ================================
+   
+   ================================ */
+
